@@ -24,7 +24,7 @@ function Header({onClickCart}) {
         <ul className={style.headerRight}>
           <li onClick={onClickCart} className={style.icon}>
             <img src={cart} alt="cart" />
-            <span>{totalPrice} $</span>
+            <span>{totalPrice} BYN</span>
           </li>
           <li className={style.icon}>
             <Link to="/favorites">
