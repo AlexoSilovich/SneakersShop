@@ -15,6 +15,7 @@ body {
 
 * {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +50,6 @@ body {
   margin-top: 100px;
 
     .top-content {
-      position: sticky;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -94,4 +94,65 @@ body {
       align-items: center;
       justify-content: flex-start;
     }
+}
+
+@media(max-width: 850px) {
+  .wrapper {
+    position: relative;
+    width: 100%;
+    background-color: rgb(140, 217, 211);
+  }
+  
+  .content {
+    padding: 0 20px;
+    margin-top: 60px;
+  
+      .top-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 40px;
+  
+        h1 {
+          font-family: 'Rowdies', cursive;
+          font-weight: 700;
+          font-size: 40px;
+          margin-bottom: 10px;
+          color: #f55ca6;
+        }
+        
+  
+          .search-block {
+            display: flex;
+            align-items: center;
+            border: 1px solid #f3f3f3;
+            border-radius: 10px;
+            padding: 0 15px;
+            background: #fff;
+          }
+  
+            input {
+              width: 200px;
+              border: 0px;
+              padding: 13px;
+              font-size: 16px;
+              outline: none;
+            }
+            
+            .removeInput {
+              width: 30px;
+              opacity: 0.5;
+              cursor: pointer;
+            }
+      }
+  
+      .card-container {
+        display: flex;
+        margin: 0 0 0 48px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+      }
+  }
 }
