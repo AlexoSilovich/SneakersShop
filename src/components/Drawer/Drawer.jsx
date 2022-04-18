@@ -60,7 +60,7 @@ function Drawer({ onClose, onRemove, items, opened }) {
                 <img width={80} src={obj.src} alt="sneaker" />
                 <div className={style.info}>
                   <p>{obj.name}</p>
-                  <b>{obj.price} $</b>
+                  <b>{obj.price} BYN</b>
                 </div>
                 <img
                   onClick={() => onRemove(obj.id)}
@@ -77,12 +77,12 @@ function Drawer({ onClose, onRemove, items, opened }) {
             <li>
               <span>Итого:</span>
               <div></div>
-              <b>{totalPrice} $</b>
+              <b>{totalPrice} BYN</b>
             </li>
             <li>
               <span>Налог 5%:</span>
               <div></div>
-              <b>{(totalPrice / 100) * 5} $</b>
+              <b>{(totalPrice / 100) * 5} BYN</b>
             </li>
           </ul>
           <button disabled={isLoading} onClick={onClickOrder} className={style.greenBtn}>
